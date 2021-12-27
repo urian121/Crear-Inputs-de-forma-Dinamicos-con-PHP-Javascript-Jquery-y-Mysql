@@ -9,7 +9,13 @@
 <body>
 
 
-<div class="container mt-5">
+<div class="container mt-5" style="background-color: #f9f9f9;">
+  <br>
+  <h1 class="text-center">
+    <strong>Crear campos de forma dinamica con JavaScript</strong>
+  </h1>
+  <hr /><br>
+
 <form action="recib.php" method="POST">
 
   <div class="row text-right">
@@ -43,11 +49,13 @@
 </div>
 
 <div class="newData"></div>
+
   <div class="row text-center mt-5">
      <div class="col-md-12">
     <input type="submit" class="btn btn-primary" value="Registrar"/>
   </div>
   </div>
+  <br>
 </form>
 </div>
  
