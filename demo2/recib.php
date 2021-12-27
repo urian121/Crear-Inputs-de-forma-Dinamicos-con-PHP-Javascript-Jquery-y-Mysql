@@ -23,5 +23,5 @@ $resultadoInsertUser = mysqli_query($con, $InserData);
   
   }
 
- header('Location: ../');
+ header('Location: ./');
 ?>

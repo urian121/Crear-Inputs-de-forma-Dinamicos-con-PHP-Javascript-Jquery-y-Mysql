@@ -53,7 +53,7 @@
  
  
   <script type="text/javascript">
-    $(document).ready(function () { 
+    $(function () { 
       var i = 1;
       $('.add-btn').click(function (e) {
         e.preventDefault();

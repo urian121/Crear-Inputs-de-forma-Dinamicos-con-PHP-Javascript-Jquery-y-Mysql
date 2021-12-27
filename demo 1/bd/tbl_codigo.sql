@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-12-2021 a las 02:24:34
+-- Tiempo de generación: 27-12-2021 a las 02:24:13
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.4
 
@@ -24,36 +24,36 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tb_st`
+-- Estructura de tabla para la tabla `tbl_codigo`
 --
 
-CREATE TABLE `tb_st` (
-  `CODIGO` int(11) NOT NULL,
-  `PRODUCTO` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `NUMERO_ORDEN` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ESTADO` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `CODE_REFERENCIA` varchar(12) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE `tbl_codigo` (
+  `PKCOD_ID` int(11) NOT NULL,
+  `FKCOD_ID_CLI_ID` int(11) DEFAULT NULL,
+  `COD_CODIGO` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `COD_ESTADO` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `tb_st`
+-- Indices de la tabla `tbl_codigo`
 --
-ALTER TABLE `tb_st`
-  ADD PRIMARY KEY (`CODIGO`);
+ALTER TABLE `tbl_codigo`
+  ADD PRIMARY KEY (`PKCOD_ID`),
+  ADD KEY `FKCOD_ID_CLI_ID` (`FKCOD_ID_CLI_ID`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `tb_st`
+-- AUTO_INCREMENT de la tabla `tbl_codigo`
 --
-ALTER TABLE `tb_st`
-  MODIFY `CODIGO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+ALTER TABLE `tbl_codigo`
+  MODIFY `PKCOD_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1822;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
