@@ -8,7 +8,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
-    <title>Asignar y actualizar código</title>
+    <title>Crear campos de forma dinamica con Javascript</title>
     <style>
       em{
         color: crimson !important;
@@ -28,10 +28,12 @@
 </head>
 <body>
     
-  <div class="container">
-    <div class="row text-center">
-      <h1>Asignar - actualizar códigos a clientes</h1>
+  <div class="container" style="background-color:#f9f9f9;">
+    <br><br>
+    <div class="row text-center mt-5">
+      <h1><strong>Crear campos de forma dinamica con JavaScript</strong></h1>
       <hr />
+      <br>
     </div>
 
     <?php
@@ -72,12 +74,16 @@
 
   <br><br>
   <br><br>
+  <br>
   <div class="row">
   <div class="col-md-4"></div>
     <div class="col-md-4">
       <button type="submit" class="btn btn-primary btn-block">Pocesar Información</button>
     </div>
   <div class="col-md-4"></div>
+  <br><br>
+  <br><br>
+
 </form>
 
 

@@ -3,7 +3,7 @@
 
 <?php
 require("config.php");
-$idCliente       = $_POST['idCliente'];
+$idCliente      = $_POST['idCliente'];
 $COD_CODIGO     = $_POST['COD_CODIGO'];
 $COD_ESTADO     ="Activo";
 $CANT_USO       =0;
@@ -19,7 +19,7 @@ if($dataCode >0){
     if(mysqli_num_rows($queryCode)>0){
         //echo 'Ya existe el codigo';
         }else{
-            $queryInsertCode = ("INSERT INTO tbl_codigo(FKCOD_ID_CLI_ID, COD_CODIGO, COD_ESTADO, CANT_USO) VALUES ('" .$idCliente. "','" .$COD_CODIGO[$i]. "','".$COD_ESTADO."','".$CANT_USO."')");
+            $queryInsertCode = ("INSERT INTO tbl_codigo(FKCOD_ID_CLI_ID, COD_CODIGO, COD_ESTADO) VALUES ('" .$idCliente. "','" .$COD_CODIGO[$i]. "','".$COD_ESTADO."')");
             $resultado = mysqli_query($con, $queryInsertCode);
         }
     } 
